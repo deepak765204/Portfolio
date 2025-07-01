@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAX Analysis Using Power BI - Deepak</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: inline-flex;
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        line-height: 1.8;
+      }
+      .project-objectives li {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      .dax-analysis-report {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      h1,
+      h2 {
+        color: #140707;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      ol {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+        font-size: 16px;
+      }
+
+      code {
+        background-color: #eee;
+        padding: 3px 6px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+      }
+
+      img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        color: #007bff;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-image: linear-gradient(to right, #831bcd, #f9620b);
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-image: linear-gradient(to right, #f9620b, #831bcd);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      header,
+      footer {
+        background: linear-gradient(to right, #831bcd, #f9620b);
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @media only screen and (max-width: 768px) {
+        .project-container {
+          padding: 20px 10px;
+        }
+
+        img {
+          max-height: 250px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <header>
+        <h1>Project1</h1>
+        <p>Explore my projects and technical skills</p>
+      </header>
+
+      <div class="project-container">
+        <h1>📊 DAX Analysis Using Power BI</h1>
+        <p><strong>Author:</strong> Deepak Annapureddy</p>
+        <p><strong>Tools Used:</strong> Power BI, DAX, Excel, Power Query</p>
+      </div>
+
+      <div class="project-container">
+        <h2>🔍 Project Overview</h2>
+        <p style="text-align: left">
+          <li>
+            This Power BI project demonstrates data analytics and dashboard
+            building for tech product sales using DAX formulas. The visuals help
+            understand trends across cities, product types, payment modes, and
+            delivery channels.
+          </li>
+        </p>
+      </div>
+
+      <div class="project-objectives project-container">
+        <h2>🎯 Project Objectives</h2>
+        <ul>
+          <li>Analyze product-wise and city-wise sales performance</li>
+          <li>Track total orders, deliveries, quantity, and online sales</li>
+          <li>
+            Use DAX measures to calculate KPIs (Sales, Quantity, Margin, etc.)
+          </li>
+          <li>Create user-friendly dashboards with slicers and filters</li>
+        </ul>
+      </div>
+
+      <div class="project-container">
+        <h2>📊 Sample Dashboard Visuals</h2>
+        <img src="Screenshot 2025-07-01 184227.png" alt="Dashboard Overview" />
+        <img
+          src="Screenshot 2025-07-01 184244.png"
+          alt="Sales By Product & Location"
+        />
+        <img
+          src="Screenshot 2025-07-01 184256.png"
+          alt="Final Summary KPI Table"
+        />
+      </div>
+
+      <div class="dax-analysis-report">
+        <h2><center>🧠 Key DAX Measures</center></h2>
+        <ul>
+          <li><code>Total Sales = SUM(Sales[Total Sales])</code></li>
+          <li><code>Total Quantity = SUM(Sales[Quantity])</code></li>
+          <li><code>Total Orders = DISTINCTCOUNT(Sales[Order ID])</code></li>
+          <li>
+            <code
+              >Online Deliveries = CALCULATE(SUM(Sales[Delivery]),
+              Sales[Channel]= "Online")</code
+            >
+          </li>
+          <li>
+            <code
+              >Profit Margin % = DIVIDE(SUM(Sales[Profit]), SUM(Sales[Total
+              Sales]), 0)</code
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-objectives project-container">
+        <h2>📈 Insights Gained</h2>
+        <ul>
+          <li>996 Total Customers made 1000 Total Orders across India</li>
+          <li>Online deliveries were 336; non-online deliveries were 664</li>
+          <li>
+            Total Online Sales reached ₹17M with an average unit price of ₹10.5K
+          </li>
+          <li>
+            Top cities and product types contributed over 50% of total revenue
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-container">
+        <h2>📄 Report Download</h2>
+        <p>
+          <a
+            href="https://1drv.ms/u/c/8c11ea2a6a79a48c/EUly31B3xRFJl-V_WMkoUuEBXYyFCzcpnPtnPPGiNhxX4Q?e=La86vH"
+            download
+          >
+            <button type="button">📥 Download Project Report (PDF)</button>
+          </a>
+        </p>
+
+        <p class="back-link">
+          <a href="portfolio.html">← Back to Main Profile Page</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>&copy; 2025 Deepak. All rights reserved.</p>
+      </footer>
+    </center>
+  </body>
+</html>
