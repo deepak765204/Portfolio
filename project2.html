@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperStore Sales Dashboard - Deepak</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: inline-flex;
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        line-height: 1.8;
+      }
+      .project-objectives li {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      .dax-analysis-report {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      h1,
+      h2 {
+        color: #140707;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      ol {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+        font-size: 16px;
+      }
+
+      code {
+        background-color: #eee;
+        padding: 3px 6px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+      }
+
+      img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        color: #007bff;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-image: linear-gradient(to right, #831bcd, #f9620b);
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-image: linear-gradient(to right, #f9620b, #831bcd);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      header,
+      footer {
+        background: linear-gradient(to right, #831bcd, #f9620b);
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @media only screen and (max-width: 768px) {
+        .project-container {
+          padding: 20px 10px;
+        }
+
+        img {
+          max-height: 250px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <header>
+        <h1>Project2</h1>
+        <p>SuperStore Sales Dashboard Analysis</p>
+      </header>
+
+      <div class="project-container">
+        <h1>📊 SuperStore Sales Dashboard Analysis</h1>
+        <p><strong>Author:</strong> Deepak Annapureddy</p>
+        <p><strong>Tools Used:</strong> Power BI, DAX, Excel, SQL</p>
+      </div>
+
+      <div class="project-container">
+        <h2>🔍 Project Overview</h2>
+        <p style="text-align: left">
+         <ul>
+        <li>
+          Developed an interactive Power BI dashboard to analyze sales
+          performance across regions, categories, and customer segments.
+        </li>
+        <li>
+          Implemented KPIs and forecasting to support data-driven business
+          decisions.
+        </li>
+        <li>
+          Visualized trends in sales, profit, and customer behavior using
+          dynamic filters and charts.
+        </li>
+      </ul>
+    </div>
+        </p>
+      </div>
+
+      <div class="project-objectives project-container">
+        <h2>🎯 Project Objectives</h2>
+         <ul>
+        <li>Analyze sales and profit trends over time</li>
+        <li>Identify top-performing products and categories</li>
+        <li>Perform region-wise and state-wise sales analysis</li>
+        <li>Forecast future sales for 15 days</li>
+        <li>Create interactive and user-friendly dashboard</li>
+      </ul>
+      </div>
+
+      <div class="project-container">
+        <h2>📊 Sample Dashboard Visuals</h2>
+        <img src="Dashboard.png" alt="Dashboard Overview" />
+        <img
+          src="forecast.png"
+          alt="Sales Forecasting"
+        />
+       
+      </div>
+
+      <div class="dax-analysis-report">
+        <h2><center>🧠 Key DAX Measures</center></h2>
+         <ul>
+        <li><code>Total Sales = SUM(Orders[Sales])</code></li>
+        <li><code>Total Profit = SUM(Orders[Profit])</code></li>
+        <li><code>Total Orders = DISTINCTCOUNT(Orders[Order ID])</code></li>
+        <li>
+          <code
+            >Profit Margin % = DIVIDE(SUM(Orders[Profit]), SUM(Orders[Sales]),
+            0)</code
+          >
+        </li>
+        <li>
+          <code>Sales Growth % = (Current - Previous) / Previous</code>
+        </li>
+      </ul>
+      </div>
+
+      <div class="project-objectives project-container">
+        <h2>📈 Insights Gained</h2>
+        <ul>
+        <li>California generates the highest sales revenue</li>
+        <li>Office Supplies is the top-performing category</li>
+        <li>Phones and Chairs contribute major revenue</li>
+        <li>Standard Class is the most used shipping mode</li>
+        <li>Sales show an overall upward trend</li>
+        <li>Forecast indicates continued growth in upcoming days</li>
+      </ul
+      </div>
+
+      <div class="project-container">
+        <h2>📄 Report Download</h2>
+        <p>
+          <a
+            href="https://1drv.ms/u/c/8c11ea2a6a79a48c/IQCoFW3vMDZWSr3YVrxfTQKiAYfSz9x-iBvVs4qjJ1GYzMg?e=udRVRK"
+            download
+          >
+            <button type="button">📥 Download Project Report (PDF)</button>
+          </a>
+        </p>
+
+        <p class="back-link">
+          <a href="portfolio.html">← Back to Main Profile Page</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Deepak. All rights reserved.</p>
+      </footer>
+    </center>
+  </body>
+</html>

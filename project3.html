@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Density Estimation - Deepak</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: inline-flex;
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        line-height: 1.8;
+      }
+      .project-objectives li {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      .dax-analysis-report {
+        list-style-type: disc;
+        margin-left: 20px;
+        background-color: #fff;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-weight: 500;
+      }
+      h1,
+      h2 {
+        color: #140707;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      ol {
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+        font-size: 16px;
+      }
+
+      code {
+        background-color: #eee;
+        padding: 3px 6px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+      }
+
+      img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      a {
+        color: #007bff;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-image: linear-gradient(to right, #831bcd, #f9620b);
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-image: linear-gradient(to right, #f9620b, #831bcd);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      header,
+      footer {
+        background: linear-gradient(to right, #831bcd, #f9620b);
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @media only screen and (max-width: 768px) {
+        .project-container {
+          padding: 20px 10px;
+        }
+
+        img {
+          max-height: 250px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <header>
+        <h1>Project3</h1>
+        <p>Real-Time AI Based Traffic Management System</p>
+      </header>
+
+      <div class="project-container">
+        <h1>🚦Real-Time AI Based Traffic Management System</h1>
+        <p><strong>Author:</strong> Deepak Annapureddy</p>
+        <p><strong>Tools Used:</strong> Python, OpenCV, YOLOv11, Flask</p>
+      </div>
+
+      <div class="project-container">
+        <h2>🔍 Project Overview</h2>
+        <p style="text-align: left">
+          <ul>
+        <li>
+          This project is an AI-based traffic management system that detects
+          vehicles from CCTV/video feeds and dynamically controls traffic
+          signals.
+        </li>
+        <li>
+          It uses YOLOv11 for real-time object detection and calculates traffic
+          density based on vehicle count.
+        </li>
+      </ul>
+        </p>
+      </div>
+
+      <div class="project-objectives project-container">
+        <h2>🎯 Project Objectives</h2>
+       <ul>
+        <li>Detect vehicles in real-time using deep learning</li>
+        <li>Estimate traffic density (Low / Medium / High)</li>
+        <li>Dynamically adjust traffic signal timing</li>
+        <li>Provide ambulance priority system</li>
+        <li>Display live dashboard using Flask</li>
+      </ul>
+      </div>
+
+      <div class="project-container">
+        <h2>📊 Project Outputs</h2>
+      <img src="traffic1.png" alt="Login Page" />
+      <img src="traffic2.png" alt="Traffic Density Analysis" />
+      <img src="traffic3.png" alt="Dashboard Output" />
+      </div>
+
+      <div class="project-container">
+        <h2><center>⚙️ System Working</center></h2>
+      <ul>
+        <li>Input video is captured from CCTV or file</li>
+        <li>Frames are processed using OpenCV</li>
+        <li>YOLOv11 detects vehicles in each frame</li>
+        <li>Vehicle count determines traffic density</li>
+        <li>Signal timing is adjusted dynamically</li>
+      </ul>
+    </div>
+  
+
+    
+    <div class="project-objectives project-container">
+      <h2>📈 Results</h2>
+      <ul>
+        <li>Achieved 95–97% detection accuracy</li>
+        <li>Real-time processing at 20–30 FPS</li>
+        <li>Efficient in dense traffic conditions</li>
+      </ul>
+    </div>
+
+    <div class="project-container">
+      <h2>🎥 Project Demo</h2>
+      <p>
+      <a
+        href="https://drive.google.com/file/d/1b9vFyJUW-GXnjXJZzBlZA5zIaitw8EEU/view?usp=sharing"
+        target="_blank"
+      >
+        <button>▶ Watch Demo Video</button>
+      </a>
+      </p>
+    </div>
+
+    <div class="project-container">
+      <h2>💻 Source Code</h2>
+      <p>
+      <a
+        href="https://github.com/deepak765204/Real-Time-Traffic-Density-Estimation"
+        target="_blank"
+      >
+        <button>🔗 View on GitHub</button>
+      </a>
+      </p>
+
+      <p style="margin-top: 20px">
+        
+      </p>
+    </div>
+
+      <div class="project-container">
+        <h2>📄 Download Conference paper</h2>
+        <p>
+          <a
+            href="https://1drv.ms/b/c/8c11ea2a6a79a48c/IQDe9_GfY-qPTqFGuMIngouZAcQFtiYbCpMEBGW9yUeIBCg?e=hXmCsP"
+            download
+          >
+            <button type="button">📥 Download Conference paper (PDF)</button>
+          </a>
+        </p>
+
+        <p class="back-link">
+          <a href="portfolio.html">← Back to Main Profile Page</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>&copy; 2025 Deepak. All rights reserved.</p>
+      </footer>
+    </center>
+  </body>
+</html>
